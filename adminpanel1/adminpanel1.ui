@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>adminpanel1</class>
+ <widget class="QMainWindow" name="adminpanel1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>934</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>adminpanel1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="2">
+     <widget class="QTableView" name="dr_accounts_view"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="ActiveLabel">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Active</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="Refresh">
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="Delete">
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QTableView" name="doctors_view"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QPushButton" name="StopMYSQL">
+      <property name="text">
+       <string>Stop MySQL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="RestartMYSQL">
+      <property name="text">
+       <string>Restart MySQL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="StartMYSQL">
+      <property name="text">
+       <string>Start MySQL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="RegisterAcc">
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>934</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+   </widget>
+   <addaction name="menuAdmin"/>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>Refresh</tabstop>
+  <tabstop>dr_accounts_view</tabstop>
+  <tabstop>StartMYSQL</tabstop>
+  <tabstop>Delete</tabstop>
+  <tabstop>RestartMYSQL</tabstop>
+  <tabstop>StopMYSQL</tabstop>
+  <tabstop>doctors_view</tabstop>
+  <tabstop>RegisterAcc</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
